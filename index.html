@@ -33,11 +33,9 @@
     .zones-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
     .zones-grid > div { opacity: 0; transform: scale(0.9); transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.34,1.56,0.64,1); }
     .zones-grid > div.revealed { opacity: 1; transform: scale(1); }
-    .zones-grid > div.revealed:hover { transform: scale(1.035) translateY(-8px); }
     .axis-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 16px; }
     .axis-grid > div { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.34,1.56,0.64,1); }
     .axis-grid > div.revealed { opacity: 1; transform: translateY(0); }
-    .axis-grid > div.revealed:hover { transform: translateY(-8px) scale(1.04); }
     .info-grid > *, .zones-grid > *, .axis-grid > *, .cta-grid > * { min-width: 0; }
     .hero-fade { animation: heroFade 0.9s ease-out both; }
     @keyframes heroFade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
